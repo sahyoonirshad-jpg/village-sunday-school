@@ -1,0 +1,10 @@
+@import "tailwindcss";
+@import "./app-style.css";
+
+/* The app has its own class names (like "fixed"); don't let Tailwind turn them into its utilities. */
+@source not "../lib";
+
+/* Tailwind's reset removes list numbers and bullets; the lesson steps need them back. */
+#app ol { list-style: decimal; }
+#app ul { list-style: disc; }
+#app ul.legend { list-style: none; }
