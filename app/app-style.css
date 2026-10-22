@@ -137,3 +137,5 @@ button:focus-visible,input:focus-visible{outline:3px solid var(--accent);outline
 .about{margin:14px 0 0;background:var(--brand-soft);border-radius:12px;padding:10px 14px;font-size:.92rem}
 .user{display:inline-flex;align-items:center;gap:6px;font-size:.85rem;color:var(--muted)}
 .linkbtn{background:none;border:0;padding:4px 2px;min-height:32px;color:var(--brand);font-weight:700;text-decoration:underline}
+.user span,.demo code{overflow-wrap:anywhere;min-width:0}
+.linkbtn:disabled{opacity:.5;cursor:not-allowed}
