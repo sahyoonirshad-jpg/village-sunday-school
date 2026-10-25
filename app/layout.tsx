@@ -11,6 +11,7 @@ export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
   viewportFit: "cover",
+  themeColor: "#2A2F9E",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
@@ -21,7 +22,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         <link
           rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito+Sans:wght@400;600;700&family=Noto+Nastaliq+Urdu:wght@400;600&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Nunito+Sans:wght@400;600;700&family=Noto+Nastaliq+Urdu:wght@400;600&display=swap"
         />
       </head>
       <body>{children}</body>
