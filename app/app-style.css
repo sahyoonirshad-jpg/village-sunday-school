@@ -277,3 +277,28 @@ p{margin:0}
 .toast button{margin-inline-start:12px;background:none;border:0;color:var(--pink);font-weight:800;text-decoration:underline}
 
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+
+/* game pictures and the games tab */
+.game-art{display:grid;place-items:center;border-radius:16px;padding:6px}
+.game-art svg{width:100%;height:100%;display:block}
+.tile-game .game-art{height:84px;margin-bottom:6px}
+.game-art.banner{height:120px;margin:-4px -6px 4px}
+.art.tiny{width:22px;height:20px;flex:none;border-radius:6px;background:var(--soft)}
+.surprise{width:100%;font-size:17px;min-height:62px;margin:2px 0 12px}
+.dice{font-size:22px;display:inline-block;transition:transform .4s}
+.surprise:active .dice{transform:rotate(180deg)}
+.surprise-card{background:linear-gradient(150deg,#6A47A3,var(--plum-3));border-radius:28px;padding:14px;margin-bottom:14px;box-shadow:var(--lift);display:grid;gap:8px}
+.surprise-card .kicker{color:#FBCFE8;font-size:12px}
+.surprise-card .gcard{box-shadow:none}
+.results-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:22px 0 10px}
+.results-head h2{color:var(--on-bg);font-size:18px}
+.count-pill{background:rgba(255,255,255,.7);color:var(--plum-3);border-radius:999px;padding:4px 12px;font-size:.8rem;font-weight:800;white-space:nowrap}
+.ggrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(155px,1fr));gap:12px}
+.gcard{background:var(--card);color:var(--ink);border:0;border-radius:22px;padding:8px 8px 12px;text-align:start;display:grid;gap:6px;align-content:start;box-shadow:var(--lift-sm);transition:transform .15s}
+.gcard:active{transform:scale(.97)}
+.gcard .game-art{height:96px}
+.gcard strong{font-family:var(--f-head);font-weight:600;font-size:15px;line-height:1.25;padding:0 4px}
+.story-chip{display:inline-flex;align-items:center;gap:6px;background:var(--soft);border-radius:999px;padding:3px 10px 3px 4px;font-size:12px;font-weight:700;color:var(--muted);justify-self:start;margin:0 4px;max-width:calc(100% - 8px)}
+.story-chip span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.gmeta{font-size:12px;color:var(--muted);padding:0 4px}
+.gcard .hint{padding:0 4px;font-size:12px}
